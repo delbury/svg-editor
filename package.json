@@ -1,0 +1,27 @@
+{
+  "name": "svg-editor",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "typecheck . && vite build"
+  },
+  "dependencies": {
+    "ant-design-vue": "^2.0.0-rc.2",
+    "vue": "^3.0.2",
+    "vue-router": "^4.0.0-rc.3",
+    "vuex": "^4.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.2",
+    "@vuedx/typecheck": "^0.2.4-0",
+    "@vuedx/typescript-plugin-vue": "^0.2.4-0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^7.1.0",
+    "less": "^3.12.2",
+    "prettier": "^2.2.0",
+    "typescript": "^4.0.3",
+    "vite": "^1.0.0-rc.13"
+  }
+}

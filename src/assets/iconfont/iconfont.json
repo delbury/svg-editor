@@ -1,0 +1,268 @@
+{
+  "id": "2230063",
+  "name": "svg-editor",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8803673",
+      "name": "铅笔",
+      "font_class": "qianbi1",
+      "unicode": "e796",
+      "unicode_decimal": 59286
+    },
+    {
+      "icon_id": "9443723",
+      "name": "曲线",
+      "font_class": "quxian1",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "1451276",
+      "name": "曲线",
+      "font_class": "quxian",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "11532919",
+      "name": "折线",
+      "font_class": "zhexian",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "14420971",
+      "name": "前进",
+      "font_class": "qianjin",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "14421022",
+      "name": "后退",
+      "font_class": "houtui",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "14421186",
+      "name": "向下箭头",
+      "font_class": "xiangxiajiantou",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "14421232",
+      "name": "交换颜色",
+      "font_class": "jiaohuan_huaban1",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "14421255",
+      "name": "删除",
+      "font_class": "lajixiang_huaban1",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "14421259",
+      "name": "播放",
+      "font_class": "bofang_huaban1",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "14421289",
+      "name": "左右翻转",
+      "font_class": "zuoyoufanzhuan_huaban1",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "14421299",
+      "name": "垂直翻转",
+      "font_class": "chuizhifanzhuan_huaban1",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "14421416",
+      "name": "眼睛",
+      "font_class": "yanjing_huaban1",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "14421422",
+      "name": "关闭眼睛",
+      "font_class": "biyan_huaban1",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "14421461",
+      "name": "关闭",
+      "font_class": "guanbi_huaban1",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "14421463",
+      "name": "更多",
+      "font_class": "gengduo_huaban1",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "14421470",
+      "name": "图形-圆",
+      "font_class": "yuanquan_huaban1",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "14421475",
+      "name": "图形-直线",
+      "font_class": "zhixian_huaban1",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "14421531",
+      "name": "横向文字",
+      "font_class": "hengxiangwenzi_huaban1",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "14421602",
+      "name": "竖向文字",
+      "font_class": "shuxiangwenzi_huaban1",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "14421605",
+      "name": "撤回操作",
+      "font_class": "chehui_huaban1",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "14421606",
+      "name": "取消",
+      "font_class": "quxiao_huaban1",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "14421612",
+      "name": "确定",
+      "font_class": "queding_huaban1",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "14421632",
+      "name": "移动",
+      "font_class": "yidong_huaban1",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "14421637",
+      "name": "选区",
+      "font_class": "xuanqu_huaban1",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "14421639",
+      "name": "画笔",
+      "font_class": "huabi_huaban1",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "14421649",
+      "name": "油漆桶",
+      "font_class": "youqitong_huaban1",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "14421657",
+      "name": "吸管",
+      "font_class": "xiguan_huaban1",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "14421667",
+      "name": "图形-矩形",
+      "font_class": "juxinggongju_huaban1",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "14421722",
+      "name": "更多箭头",
+      "font_class": "xialajiantou_huaban1",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "14421725",
+      "name": "文字",
+      "font_class": "wenzi_huaban1",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "14421728",
+      "name": "旋转画布",
+      "font_class": "xuanzhuan_huaban1",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "14421732",
+      "name": "裁剪",
+      "font_class": "caijian_huaban1",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "14421735",
+      "name": "放大镜",
+      "font_class": "fangdajing_huaban1",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "14421805",
+      "name": "暂停播放",
+      "font_class": "zanting_huaban1",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "14421937",
+      "name": "缩小",
+      "font_class": "suoxiao_huaban1",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "14421992",
+      "name": "放大",
+      "font_class": "fangda_huaban1",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    }
+  ]
+}
