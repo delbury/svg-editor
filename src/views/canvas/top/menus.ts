@@ -1,3 +1,5 @@
+import { state } from '/@/store/top-menus';
+
 const list: Array<MenuOption> = [
   {
     key: 'file',
@@ -39,10 +41,36 @@ const list: Array<MenuOption> = [
         title: '删除',
       },
     ]
+  },
+  {
+    key: 'view',
+    title: '视图',
+    children: [
+      {
+        key: 'showRuler',
+        title: '显示刻度尺',
+        checked: state.showRulers,
+      },
+      {
+        key: 'showGrid',
+        title: '显示网格',
+        checked: state.showGrid,
+      },
+    ]
   }
 ];
 
-enum Menus { file, edit };
-enum FuncsEnum { newFile, openSvg, import, export, revoke, redo, delete };
+enum MenusEnum { file, edit, view };
+enum FileFuncsEnum { newFile, openSvg, import, export };
+enum EditFuncsEnum { revoke, redo, delete };
+enum ViewFuncsEnum { showRuler, showGrid };
 
-export { list, Menus, FuncsEnum };
+type FuncsEnumTypes = FileFuncsEnum | EditFuncsEnum | ViewFuncsEnum;
+
+const FuncsEnums = {
+  file: FileFuncsEnum,
+  edit: EditFuncsEnum,
+  view: ViewFuncsEnum,
+};
+
+export { list, MenusEnum, FuncsEnums, FuncsEnumTypes };

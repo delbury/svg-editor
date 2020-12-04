@@ -13,7 +13,17 @@ export const singleTools: Array<ToolOption> = [
     key: 'line',
     title: '直线',
     icon: 'icon-zhixian_huaban1',
+  },
+  {
+    key: 'rect',
+    title: '矩形',
+    icon: 'icon-juxinggongju_huaban1',
+  },
+  {
+    key: 'circle',
+    title: '圆形',
+    icon: 'icon-yuanquan_huaban1',
   }
 ];
 
-export enum SingleToolsEnum { select, pencil, line };
+export enum SingleToolsEnum { select, pencil, line, rect, circle };

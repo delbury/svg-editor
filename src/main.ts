@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
-import store from './store';
+import { store, key } from './store';
 import './assets/style/index.less';
 import './assets/iconfont/iconfont.css';
 
@@ -9,6 +9,6 @@ import './assets/iconfont/iconfont.css';
 import { Button, Menu, Dropdown, Radio } from 'ant-design-vue';
 
 const app = createApp(App);
-app.use(router).use(store);
+app.use(router).use(store, key);
 app.use(Button).use(Menu).use(Dropdown).use(Radio);
 app.mount('#app');

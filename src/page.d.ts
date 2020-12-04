@@ -4,6 +4,8 @@ type MenuRow = {
   title: string;
   shortcutKey?: string[] | string;
   bottomBorder?: boolean;
+  checked?: boolean;
+  disabled?: boolean;
 }
 // 顶部菜单栏
 interface MenuOption {

@@ -1,6 +1,8 @@
 import path from 'path';
+import { ServerConfig  } from 'vite';
 
-export default {
+
+const config: ServerConfig  = {
   alias: {
     '/@/': path.resolve(__dirname, 'src'),
     '/@assets/': path.resolve(__dirname, 'src/assets'),
@@ -10,5 +12,8 @@ export default {
       javascriptEnabled: true,
       additionalData: '@import "./src/assets/style/theme.less";' // 全局 style 引入主题变量
     }
-  }
+  },
+  proxy: {},
 }
+
+export default config;

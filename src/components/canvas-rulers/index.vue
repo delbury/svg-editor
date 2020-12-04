@@ -9,7 +9,7 @@
       </div>
       <div class="canvas-rulers-content">
         <!-- 背景辅助网格 -->
-        <canvas class="bg-grid" ref="gridRef"></canvas>
+        <canvas v-show="showGrid" class="bg-grid" ref="gridRef"></canvas>
         <slot></slot>
       </div>
     </div>
@@ -18,15 +18,18 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, ref, computed, Ref } from 'vue';
+// import { useStore } from 'vuex';
+// import { key } from '/@/store'
+import { useStore } from '/@/store';
 import { Ruler, RulerDirections } from './ruler';
 import { Grid } from './grid';
 
 export default defineComponent({
   name: 'canvas-rulers',
   setup() {
+    const store = useStore();
     const showLeftRuler = ref(true);
     const showTopRuler = ref(true);
-    const showRulers = ref(true);
     const topRulerRef: Ref<HTMLCanvasElement | null> = ref(null);
     const leftRulerRef: Ref<HTMLCanvasElement | null> = ref(null);
     const gridRef: Ref<HTMLCanvasElement | null> = ref(null);
@@ -40,7 +43,8 @@ export default defineComponent({
     return {
       showLeftRuler,
       showTopRuler,
-      showRulers,
+      showRulers: computed(() => store.state.topMenus.showRulers),
+      showGrid: computed(() => store.state.topMenus.showGrid),
       topRulerRef,
       leftRulerRef,
       gridRef,
@@ -77,6 +81,8 @@ export default defineComponent({
   }
 
   .ruler {
+    position: relative;
+    z-index: 290;
     background-color: @primary-10;
     // canvas {
     //   width: 100%;

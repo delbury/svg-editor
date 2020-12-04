@@ -21,8 +21,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, ref } from 'vue';
+import { defineComponent, reactive, ref, Ref } from 'vue';
 import { singleTools, SingleToolsEnum } from './tools'
+import { useStore } from '/@/store';
 
 interface AntdChangeEvent {
   target: {
@@ -32,12 +33,18 @@ interface AntdChangeEvent {
 export default defineComponent({
   name: 'app-tools',
   setup() {
+    const store = useStore();
     const toolList = reactive(singleTools);
-    const currentTool = ref(SingleToolsEnum[0]); // 当前选中的 tool
+    const currentTool: Ref<string> = ref(SingleToolsEnum[store.state.leftTools.currentTool]); // 当前选中的 tool
+
+    const changeToolChange = function(ev: AntdChangeEvent) {
+      store.commit('leftTools/setCurrentToolMutation', SingleToolsEnum[currentTool.value as any]);
+    }
 
     return {
       toolList,
       currentTool,
+      changeToolChange,
     };
   },
   data() {
@@ -51,11 +58,6 @@ export default defineComponent({
       }
     }
   },
-  methods: {
-    changeToolChange(ev: AntdChangeEvent) {
-      console.log(ev.target.value, this.currentTool);
-    }
-  }
 });
 </script>
 
