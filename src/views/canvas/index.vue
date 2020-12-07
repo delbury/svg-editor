@@ -6,7 +6,7 @@
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
         xmlns:xlink="http://www.w3.org/1999/xlink"
-        v-select-area="handleSelectAreaCallback"
+        v-select-area="selectAreaOptions"
       >
         <circle cx="100" cy="100" r="50" fill="skyblue"></circle>
       </svg>
@@ -15,10 +15,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, Ref, onMounted } from 'vue';
+import { defineComponent, ref, Ref, onMounted, computed, watchEffect } from 'vue';
 import CanvasRulers from '/@/components/canvas-rulers/index.vue';
 import { SvgContainer } from './container';
-import { selectArea } from '/@/lib/directives'
+import { selectArea, CallbackParam } from '/@/lib/directives'
+import { useStore } from '/@/store'
+import { SingleToolsEnum } from './left/tools';
 
 export default defineComponent({
   name: 'home-page',
@@ -26,16 +28,23 @@ export default defineComponent({
   directives: { selectArea },
   setup() {
     const svgRef: Ref<SVGSVGElement | null> = ref(null);
+    const store = useStore();
 
     onMounted(() => {
       const svg: SvgContainer = new SvgContainer(svgRef.value as SVGSVGElement);
     });
 
-    const handleSelectAreaCallback = function() {};
+    const handleSelectAreaMoveCallback = function(size: CallbackParam) {
+      console.log(size)
+    };
+    const selectAreaOptions = computed(() => ({
+      selectMoveCallback: handleSelectAreaMoveCallback,
+      disabled: store.state.leftTools.currentTool !== SingleToolsEnum.select
+    }));
 
     return {
       svgRef,
-      handleSelectAreaCallback,
+      selectAreaOptions,
     }
   }
 });

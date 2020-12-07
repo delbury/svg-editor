@@ -12,7 +12,6 @@ const state: LeftToolsState = {
 const mutations: MutationTree<LeftToolsState> = {
   setCurrentToolMutation(state: LeftToolsState, payload: SingleToolsEnum) {
     state.currentTool = payload;
-    console.log(state.currentTool)
   }
 };
 

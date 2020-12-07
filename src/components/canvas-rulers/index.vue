@@ -81,6 +81,7 @@ export default defineComponent({
   }
 
   .ruler {
+    flex-shrink: 0;
     position: relative;
     z-index: 290;
     background-color: @primary-10;

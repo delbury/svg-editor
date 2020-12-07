@@ -1,29 +1,29 @@
+export enum SingleToolsEnum { select, pencil, line, rect, circle };
+
 export const singleTools: Array<ToolOption> = [
   {
-    key: 'select',
+    key: SingleToolsEnum.select,
     title: '选择工具',
     icon: 'icon-yidong_huaban1',
   },
   {
-    key: 'pencil',
+    key: SingleToolsEnum.pencil,
     title: '铅笔',
     icon: 'icon-qianbi1',
   },
   {
-    key: 'line',
+    key: SingleToolsEnum.line,
     title: '直线',
     icon: 'icon-zhixian_huaban1',
   },
   {
-    key: 'rect',
+    key: SingleToolsEnum.rect,
     title: '矩形',
     icon: 'icon-juxinggongju_huaban1',
   },
   {
-    key: 'circle',
+    key: SingleToolsEnum.circle,
     title: '圆形',
     icon: 'icon-yuanquan_huaban1',
   }
 ];
-
-export enum SingleToolsEnum { select, pencil, line, rect, circle };

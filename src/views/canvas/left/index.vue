@@ -35,10 +35,10 @@ export default defineComponent({
   setup() {
     const store = useStore();
     const toolList = reactive(singleTools);
-    const currentTool: Ref<string> = ref(SingleToolsEnum[store.state.leftTools.currentTool]); // 当前选中的 tool
+    const currentTool: Ref<number> = ref(store.state.leftTools.currentTool); // 当前选中的 tool
 
     const changeToolChange = function(ev: AntdChangeEvent) {
-      store.commit('leftTools/setCurrentToolMutation', SingleToolsEnum[currentTool.value as any]);
+      store.commit('leftTools/setCurrentToolMutation', currentTool.value);
     }
 
     return {

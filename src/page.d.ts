@@ -1,6 +1,6 @@
 // 顶部菜单栏内选项
 type MenuRow = {
-  key: string;
+  key: number;
   title: string;
   shortcutKey?: string[] | string;
   bottomBorder?: boolean;
@@ -9,14 +9,14 @@ type MenuRow = {
 }
 // 顶部菜单栏
 interface MenuOption {
-  key: string;
+  key: number;
   title: string;
   children: Array<MenuRow>;
 }
 
 // 工具栏项
 interface ToolOption {
-  key: string;
+  key: number;
   title: string;
   message?: string;
   icon?: string;

@@ -40,13 +40,12 @@ export default defineComponent({
       if('checked' in row) {
         row.checked = !row.checked;
       }
-      switch(+MenusEnum[menuKey]) {
+      switch(menuKey) {
         // 视图
         case MenusEnum.view: {
-          switch(+FuncsEnums.view[funcKey]) {
+          switch(funcKey) {
             // 显示刻度尺
             case FuncsEnums.view.showRuler: {
-              console.log(row.checked)
               store.commit('topMenus/toggleRulersStateMutation', row.checked);
               break;
             }
